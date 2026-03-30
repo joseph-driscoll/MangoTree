@@ -12,6 +12,8 @@ https://v0-mango-tree-clone-fqfcsytdp.vercel.app/
 
 AI-powered content generation platform for small businesses. Mango Tree takes a business idea and automatically generates a full suite of marketing copy across every channel — website, email, social media, product listings, blog posts, customer messages, and review responses — all in a single generation pass.
 
+<img width="1901" height="912" alt="mangotree" src="https://github.com/user-attachments/assets/248cf5d9-dfc3-4619-b8fe-f26561a7f98d" />
+
 ---
 
 ## What It Does
