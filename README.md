@@ -1,3 +1,10 @@
+This intention of building this web app was for experimentation and to get hands on experience with cutting edge agentic workflows and AI automation tools.
+This app serves as a content genereation engine by layering in different LLM flavors for the user to experiment with and ultiamtely providing a custom and catered content generation experience.
+
+# Demo
+
+https://v0-mango-tree-clone-fqfcsytdp.vercel.app/
+
 # Mango Tree
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/driscollrecording-gmailcoms-projects/v0-mango-tree-clone)
