@@ -1,7 +1,11 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback';
+}
+
 
 :root {
   --background: oklch(1 0 0);
