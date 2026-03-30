@@ -2,7 +2,7 @@ This intention of building this web app was for experimentation and to get hands
 This app serves as a content genereation engine by layering in different LLM flavors for the user to experiment with, mix and match, and ultimately provides a custom and catered content generation experience.
 
 # Demo
-https://v0-mango-tree.vercel.app/
+https://v0-mango-tree.vercel.app
 
 
 # Mango Tree
