@@ -50,9 +50,6 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: 1.2.8
         version: 1.2.8(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@supabase/auth-helpers-nextjs':
-        specifier: 0.15.0
-        version: 0.15.0(@supabase/supabase-js@2.100.1)
       '@supabase/ssr':
         specifier: 0.9.0
         version: 0.9.0(@supabase/supabase-js@2.100.1)
@@ -841,12 +838,6 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
-
-  '@supabase/auth-helpers-nextjs@0.15.0':
-    resolution: {integrity: sha512-VtXz3GGnxluoxks1g3SaCoYr2OZ7PgRukDl+pLWrDfD2dPDaG8hmkp5iBZsU+lmsDYALGNO2dgbymgpAfD8eCQ==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-    peerDependencies:
-      '@supabase/supabase-js': ^2.76.1
 
   '@supabase/auth-js@2.100.1':
     resolution: {integrity: sha512-c5FB4nrG7cs1mLSzFGuIVl2iR2YO5XkSJ96uF4zubYm8YDn71XOi2emE9sBm/avfGCj61jaRBLOvxEAVnpys0Q==}
@@ -1814,11 +1805,6 @@ snapshots:
   '@radix-ui/rect@1.1.1': {}
 
   '@standard-schema/spec@1.1.0': {}
-
-  '@supabase/auth-helpers-nextjs@0.15.0(@supabase/supabase-js@2.100.1)':
-    dependencies:
-      '@supabase/supabase-js': 2.100.1
-      cookie: 1.1.1
 
   '@supabase/auth-js@2.100.1':
     dependencies:
