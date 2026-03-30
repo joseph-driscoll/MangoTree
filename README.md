@@ -1,4 +1,4 @@
-This intention of building this web app was for experimentation and to get hands on experience with vibe coding, cutting edge agentic workflows, and AI automation tools.
+This intention of building this web app was for experimentation and to get hands on experience with vibe coding, cutting edge agentic workflows, and AI automation tools back in 2024.
 This app serves as a content genereation engine by layering in different LLM flavors for the user to experiment with, mix and match, and ultimately provides a custom and catered content generation experience.
 
 # Demo
