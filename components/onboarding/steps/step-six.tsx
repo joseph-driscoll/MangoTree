@@ -23,21 +23,21 @@ interface StepSixProps {
 }
 
 const modelFeatures: Record<string, { speed: string; quality: string; cost: string; icon: typeof Brain; description: string; color: string }> = {
-  "grok-3-fast": {
-    speed: "Very Fast",
-    quality: "Excellent",
-    cost: "Low",
-    icon: Zap,
-    description: "Fast generation, great for quick content creation",
-    color: "bg-green-50 border-green-200",
-  },
-  "grok-3": {
+  "llama-3.3-70b-versatile": {
     speed: "Fast",
-    quality: "Best",
-    cost: "Low",
+    quality: "Excellent",
+    cost: "Free",
     icon: Brain,
-    description: "Most capable model with superior reasoning and creativity",
+    description: "Most capable model — excellent reasoning and creativity",
     color: "bg-purple-50 border-purple-200",
+  },
+  "llama-3.1-8b-instant": {
+    speed: "Very Fast",
+    quality: "Very Good",
+    cost: "Free",
+    icon: Zap,
+    description: "Fastest model — great for quick content generation",
+    color: "bg-green-50 border-green-200",
   },
 }
 
@@ -126,13 +126,13 @@ export function StepSix({ formData, updateFormData }: StepSixProps) {
             <h4 className="font-medium text-blue-900">Model Recommendations</h4>
             <ul className="text-sm text-blue-700 mt-2 space-y-1">
               <li>
-                • <strong>Grok 3 Fast:</strong> Best for quick iterations and drafts
+                • <strong>Llama 3.3 70B:</strong> Best quality for complex, creative content
               </li>
               <li>
-                • <strong>Grok 3:</strong> Premium choice for complex, creative content
+                • <strong>Llama 3.1 8B:</strong> Fastest generation for quick iterations
               </li>
             </ul>
-            <p className="text-xs text-blue-600 mt-2">Powered by xAI</p>
+            <p className="text-xs text-blue-600 mt-2">Powered by Groq — free, no API key needed</p>
           </div>
         </div>
       </div>

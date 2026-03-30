@@ -1,15 +1,15 @@
 import { generateText } from "ai"
-import { createXai } from "@ai-sdk/xai"
+import { createGroq } from "@ai-sdk/groq"
 
 export interface ModelConfig {
   model: string
   label: string
 }
 
-// Use xAI Grok models - fast and reliable
+// Groq models - connected via integration, no API key setup needed
 export const availableModels: ModelConfig[] = [
-  { model: "grok-3-fast", label: "Grok 3 Fast (Quick Generation)" },
-  { model: "grok-3", label: "Grok 3 (Best Quality)" },
+  { model: "llama-3.3-70b-versatile", label: "Llama 3.3 70B (Best Quality)" },
+  { model: "llama-3.1-8b-instant", label: "Llama 3.1 8B (Fastest)" },
 ]
 
 export interface GenerationRequest {
@@ -128,19 +128,18 @@ export const contentSubcategories = {
 }
 
 export class AIContentGenerator {
-  private xaiClient = createXai({ apiKey: process.env.XAI_API_KEY_REAL })
-
   private async generateContent(prompt: string, modelConfig?: ModelConfig, isRetry = false): Promise<string> {
     const selectedModel = modelConfig || availableModels[0]
     
     try {
+      const groq = createGroq({ apiKey: process.env.GROQ_API_KEY })
       const { text } = await generateText({
-        model: this.xaiClient(selectedModel.model),
+        model: groq(selectedModel.model),
         prompt: `You are a professional copywriter. ${prompt}
 
 IMPORTANT: Return ONLY the requested content. Do not include any prefixes, explanations, or meta-commentary. Do not say "Here is..." or "Generated content for..." - just provide the actual content requested.`,
         temperature: 0.7,
-        maxTokens: 1000,
+        maxOutputTokens: 1000,
       })
 
       return text.trim()
